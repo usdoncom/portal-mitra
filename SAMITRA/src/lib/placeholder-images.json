@@ -1,0 +1,16 @@
+{
+  "placeholderImages": [
+    {
+      "id": "login-bg",
+      "description": "Premium Umroh Landscape with Kaaba",
+      "imageUrl": "https://picsum.photos/seed/umroh-premium/1200/800",
+      "imageHint": "kaaba zamzam"
+    },
+    {
+      "id": "service-header",
+      "description": "Clean modern interface",
+      "imageUrl": "https://picsum.photos/seed/interface/800/400",
+      "imageHint": "clean interface"
+    }
+  ]
+}
