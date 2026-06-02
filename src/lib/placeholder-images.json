@@ -1,0 +1,10 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Premium Masjidil Haram background",
+      "imageUrl": "https://picsum.photos/seed/nabawi-premium/1920/1080",
+      "imageHint": "masjid nabawi"
+    }
+  ]
+}

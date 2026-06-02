@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 189 40% 98%; /* #F5FBFC Abu muda Samira */
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 184 78% 46%; /* #19C6D1 Samira Biru Tosca */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 67% 47%; /* #C9A227 Samira Emas */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 184 30% 94%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 184 78% 46%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 184 30% 90%;
+    --input: 184 30% 90%;
+    --ring: 184 78% 46%;
+    --radius: 1.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased selection:bg-primary/20;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline tracking-tight;
+  }
+}
+
+.font-body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-headline {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Islamic Geometric Pattern Watermark */
+.bg-islamic-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.878 18.09h19.022l-15.389 11.181 5.878 18.09-15.389-11.181-15.389 11.181 5.878-18.09-15.389-11.181h19.022z' fill='%2319C6D1' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/40 transition-colors;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply bg-white/70 backdrop-blur-md border border-white/20;
+}
